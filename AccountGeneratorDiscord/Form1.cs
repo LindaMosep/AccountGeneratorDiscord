@@ -70,13 +70,13 @@ namespace AccountGeneratorDiscord
                     if (o["errorId"] != null)
                     {
                         Console.WriteLine(o["errorId"].ToString());
-                        Console.WriteLine("BÖJÜÞ");
+                        Console.WriteLine("BÃ–JÃœÃž");
                         if (o["errorId"].ToString().Contains("0"))
                         {
-                            Console.WriteLine("BÖJÜÞ");
+                            Console.WriteLine("BÃ–JÃœÃž");
                             if (o["taskId"] != null)
                             {
-                                Console.WriteLine("BÖJÜÞ");
+                                Console.WriteLine("BÃ–JÃœÃž");
                                 taskId =  o["taskId"].ToString();
                                 Console.WriteLine("not null");
                             }
@@ -781,7 +781,7 @@ namespace AccountGeneratorDiscord
         private async Task<string> TwoCaptchaGetCaptchaID(string sitekey)
         {
             string id = "";
-            HttpWebRequest request = (HttpWebRequest)WebRequest.Create("http://2captcha.com/in.php?key=b9d54eedc012d87e816a77617326b4cd&method=hcaptcha&sitekey="+sitekey+"&pageurl=https://discord.com");
+            HttpWebRequest request = (HttpWebRequest)WebRequest.Create("http://2captcha.com/in.php?key=1&method=hcaptcha&sitekey="+sitekey+"&pageurl=https://discord.com");
             request.Method = "GET";
             try
             {
